@@ -20,7 +20,6 @@ minifs upload -host=127.0.0.1 -port=1234 -dir=test -include=.pdf
 - 使用protobuf作为数据交互的格式
 
 ## 可用命令
-- minifs help
 - minifs server -port=[port] -dir=[dir]
 - minifs upload -host=[host] -port=[port] file1 file2 ...
 - minifs upload -host=[host] -port=[port] -dir=[dir] -include=[include]
