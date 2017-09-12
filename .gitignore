@@ -1,0 +1,5 @@
+.idea/
+data/
+auto.sh
+minifs
+conf/conf.toml

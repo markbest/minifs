@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package protos;
+
+message File {
+    string name = 1;
+    string content = 2;
+}
