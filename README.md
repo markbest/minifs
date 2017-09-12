@@ -18,6 +18,7 @@ minifs upload -host=127.0.0.1 -port=1234 -dir=test -include=.pdf
 
 ## 核心实现
 - 使用protobuf作为数据交互的格式
+- 使用leveldb进行文件存储
 
 ## 可用命令
 - minifs server -port=[port] -dir=[dir]
