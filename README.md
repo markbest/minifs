@@ -25,7 +25,7 @@ minifs upload -host=127.0.0.1 -port=1234 -dir=test -include=.pdf
 - minifs upload -host=[host] -port=[port] -dir=[dir] -include=[include]
 
 ## To Do
-- [x] 单个上传的实现  
-- [x] 整个目录批量上传的实现   
+- [x] 多个文件上传
+- [x] 整个目录批量上传
 - [ ] 已上传文件的列表展示、文件存储的相关属性展示    
 - [ ] 使用分布式进行扩展  
