@@ -51,7 +51,7 @@ func runUpload(cmd *Command, args []string) bool {
 	return true
 }
 
-//获取目录下的所有文件
+//gets all the files under the directory
 func getDirFiles(path string, pattern string) []string {
 	files := make([]string, 0)
 	err := filepath.Walk(path, func(path string, f os.FileInfo, err error) error {
@@ -76,7 +76,7 @@ func getDirFiles(path string, pattern string) []string {
 	return files
 }
 
-//执行文件上传操作
+//perform the file upload operation
 func processUpload(files []string) {
 	for _, file := range files {
 		fileHandle, err := os.Open(file)
