@@ -2,6 +2,7 @@
 Golang实现的简单文件存储工具
 
 ## 使用方法
+- 拷贝conf.toml.tpl为conf.toml,配置zk信息
 - 编译minifs并加入path中
 
 ```
