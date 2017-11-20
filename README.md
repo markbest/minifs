@@ -26,10 +26,10 @@ minifs upload -dir=test -include=.pdf
 ```  
 
 ## 核心实现
-- 使用grpc各个节点之间的通信
-- 使用leveldb进行文件存储
-- 使用zookeeper进行分布式服务注册和发现
-- 使用随机分配请求到各个节点
+- 使用grpc实现各个节点之间的通信
+- 使用leveldb实现文件存储
+- 使用zookeeper实现服务注册和发现
+- 暂时使用随机分配请求到各个节点
 
 ## 可用命令
 - minifs master -host=[host] -port=[port] 
