@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package protos;
+
+service FileUpload {
+    rpc DoFileUpload (FileUploadRequest) returns (FileUploadResponse) {}
+}
+
+message FileUploadRequest {
+    string name = 1;
+    string content = 2;
+}
+
+message FileUploadResponse {
+    bool status = 1;
+    string message = 2;
+    string file = 3;
+}

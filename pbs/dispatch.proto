@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package protos;
+
+import "pbs/file.proto";
+
+service Dispatch {
+    rpc DispatchJobs (DispatchRequest) returns (FileUploadResponse) {}
+}
+
+message DispatchRequest {
+    string action = 1;
+    FileUploadRequest content = 2;
+}

@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 	"github.com/markbest/minifs/command"
+	"github.com/markbest/minifs/utils"
 	"os"
 	"strings"
 	"text/template"
@@ -30,6 +31,12 @@ var helpTemplate = `Usage: minifs {{.UsageLine}}
 `
 
 func main() {
+	//init config and init zookeeper
+	if err := utils.InitConfig(); err != nil {
+		panic(err)
+	}
+	utils.NewZKConn(utils.Conf.Zookeeper.Host)
+
 	flag.Usage = usage
 	flag.Parse()
 

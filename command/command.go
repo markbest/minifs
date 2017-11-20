@@ -9,7 +9,8 @@ import (
 
 var Commands = []*Command{
 	cmdUpload,
-	cmdServer,
+	cmdMaster,
+	cmdNode,
 }
 
 type Command struct {
