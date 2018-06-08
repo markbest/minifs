@@ -1,7 +1,7 @@
 ## minifs
 Golang实现的简单文件存储工具
 
-## 使用方法
+## usage
 - 拷贝conf.toml.tpl为conf.toml,配置zk信息
 - 编译minifs并加入path中
 
@@ -25,19 +25,19 @@ minifs upload file1 file2 ...
 minifs upload -dir=test -include=.pdf
 ```  
 
-## 核心实现
+## feature
 - 使用grpc实现各个节点之间的通信
 - 使用leveldb实现文件存储
 - 使用zookeeper实现服务注册和发现
 - 暂时使用随机分配请求到各个节点
 
-## 可用命令
+## commands
 - minifs master -host=[host] -port=[port] 
 - minifs node -host=[host] -port=[port] 
 - minifs upload file1 file2 ...
 - minifs upload -dir=[dir] -include=[include]
 
-## To Do
+## TODO
 - [x] 多个文件上传
 - [x] 整个目录批量上传
 - [x] 使用分布式进行功能扩展
